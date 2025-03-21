@@ -58,7 +58,7 @@ function WeatherCard() {
         <div>Loading...</div>
       ) : (
         <>
-          <SearchBar  onSearch={setCity}/>
+          <SearchBar  onSearch={setCity} />
           <WeatherInfo
             city={weather.city}
             country={weather.country}

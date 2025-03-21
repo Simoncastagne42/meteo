@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./SearchBar.css";
+import { useState } from "react";
+import './SearchBar.css';
 
 function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
@@ -17,7 +17,7 @@ function SearchBar({ onSearch }) {
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-         placeholder="Entrez une ville..."
+        placeholder="Entrez une ville..."
       />
       <button type="submit">Rechercher</button>
     </form>
